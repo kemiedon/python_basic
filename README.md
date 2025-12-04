@@ -4,113 +4,14 @@
 
 ## 📚 課程內容
 
-### 單元一：環境設定
-
-- Anaconda 介紹與安裝
-- conda 與 pip 差異
-- VS Code 設定
-- 虛擬環境管理
-
-### 單元二：變數、資料型別與運算
-
-- 變數命名規則（PEP8）
-- 基本資料型別（int, float, str, bool）
-- 算術運算子
-- 字串組合（+ 運算子 vs f-string）
-- 常用容器資料型別（List, Tuple, Dict, Set）
-
-### 單元三：程式設計基礎流程與結構
-
-- if/elif/else 條件判斷
-- 比較與邏輯運算子
-- for 迴圈（range, enumerate）
-- while 迴圈
-- break 與 continue 流程控制
-
-### 單元四：錯誤處理
-
-- 常見錯誤訊息解析
-- try-except 基本用法
-- finally 與 else
-- 實務除錯流程
-
-### 單元五：字串與串列操作
-
-- 字串索引與切片
-- 字串拼接與重複
-- 字串常見方法
-- 串列基本操作
-- 串列排序與拷貝
-- 巢狀串列
-
-### 單元六：元組、字典與集合
-
-- 元組（Tuple）特性與應用
-- 字典（Dictionary）操作
-- 集合（Set）與集合運算
-- 資料結構選擇與轉換
-
-### 單元七：函式設計
-
-- 函式定義與參數傳遞
-- return 回傳值
-- 變數作用域（全域 vs 區域）
-- lambda 匿名函數
-- 常用函式庫（math, random, datetime, os, json）
-
-### 實務演練
-
-- 智慧生活小幫手（Smart Life Assistant）
-- 綜合應用所有基礎語法
-
-## 📂 資料夾結構
-
-```
-python_basic/
-├── README.md                    # 本檔案
-├── python_basic.md             # 完整教材文件
-├── common_container_types.md   # 容器資料型別參考
-├── SPEC/
-│   └── PROMPT_GUIDE.md        # AI 指令規範
-├── examples/                   # 教學範例檔案
-│   ├── 00_hello.py
-│   ├── 01_variables_naming.py
-│   ├── 02_data_types.py
-│   ├── 03_operations.py
-│   ├── 04_type_conversion_precedence.py
-│   ├── 05_conditional_statements.py
-│   ├── 06_for_loops.py
-│   ├── 07_lists.py
-│   ├── 08_while_loops.py
-│   ├── 09_error_exception.py
-│   ├── 10_functions.py
-│   ├── 11_common_libraries.py
-│   └── practice_11_common_libraries.py
-├── demo/                       # 示範程式與綜合應用
-│   ├── cost_example.py
-│   ├── if_else_example.py
-│   ├── for_while_example.py
-│   ├── string_example.py
-│   └── string_methods_example.py
-├── practice/                   # 課堂練習題
-│   ├── cost_exercise.py
-│   ├── if_exercise.py
-│   ├── for_loop_exercise.py
-│   ├── while_loop_exercise.py
-│   ├── string_exercise.py
-│   ├── string_slicing_practice.py
-│   ├── for_while_exercise.py
-│   └── christmas_tree_with_numbers.py
-└── homework/                   # 回家作業
-    ├── exercise_1_basic_calculations.py
-    ├── exercise_2_grade.py
-    ├── exercise_3_even_odd.py
-    ├── exercise_4_sum.py
-    ├── exercise_5_max_value.py
-    ├── exercise_6_guess_number.py
-    ├── exercise_7_nested_loops.py
-    └── exercise_9_string_methods_exercise.py
-```
+1. 環境設定
+2. 變數、資料型別與運算
+3. 程式設計基礎流程與結構
+4. 錯誤處理
+5. 字串與串列操作
+6. 元組、字典與集合
+7. 函式設計
+8. 實務演練：智慧生活小幫手
 
 ## 🚀 使用方式
 

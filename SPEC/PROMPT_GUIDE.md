@@ -10,15 +10,15 @@
 
 - **範例程式碼檔案路徑標示**：每個範例程式碼區塊下方必須標示對應的檔案路徑
   - 格式：**`<font style='color: brown;'>`範例檔參考: [相對路徑]`</font>`**
-  - 範例：**`<font style='color: brown;'>`範例檔參考: 01.Basic/examples/01_variables_naming.py`</font>`**
+  - 範例：**`<font style='color: brown;'>`範例檔參考: examples/01_variables_naming.py`</font>`**
 - **練習題檔案路徑標示**：練習題需標示對應的練習檔案位置
 
   - 格式：**`<font style='color: darkblue;'>`練習檔參考: [相對路徑]`</font>`**
-  - 範例：**`<font style='color: darkblue;'>`練習檔參考: 01.Basic/practice/cost_exercise.py`</font>`**
+  - 範例：**`<font style='color: darkblue;'>`練習檔參考: practice/cost_exercise.py`</font>`**
 
 - **作業檔案路徑標示**：回家作業需標示作業檔案資料夾
   - 格式：**`<font style='color: darkblue;'>`作業檔參考: [相對路徑]`</font>`**
-  - 範例：**`<font style='color: darkblue;'>`作業檔參考: 01.Basic/homework/`</font>`**
+  - 範例：**`<font style='color: darkblue;'>`作業檔參考: homework/`</font>`**
 
 ### 檔案組織結構
 

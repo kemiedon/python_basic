@@ -164,7 +164,7 @@ conda env create -f environment.yml
 | **`__double_leading_underscore`**      | 內部變數名稱混淆，避免與子類別衝突（名稱改寫）         | `__mangled_variable`                          |
 | **`__double_underscore__`** （dunder） | 內建特殊方法與屬性                                     | `__init__`、`__str__`、`__len__`              |
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/01_variables_naming.py </font>
+**<font style='color: brown;'>範例檔參考: examples/01_variables_naming.py </font>**
 
 ### 基本資料型別
 
@@ -191,7 +191,7 @@ is_student = True # bool
 - 字串必須用 ' 或 " 包起來。
 - 布林值是 True 和 False（首字母需大寫)
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/02_data_types.py </font>
+**<font style='color: brown;'>範例檔參考: examples/02_data_types.py </font>**
 
 ### 數值運算處理
 
@@ -249,7 +249,7 @@ print(f"6. 取餘數 (a % b): {a % b}")
 print(f"7. 次方 (b ** 3): {b ** 3}")
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/03_operations.py </font>
+**<font style='color: brown;'>範例檔參考: examples/03_operations.py </font>**
 
 ### 隨堂練習
 
@@ -271,8 +271,8 @@ print(f"7. 次方 (b ** 3): {b ** 3}")
 
 :::
 
-\*\*`<font style='color: brown;'>`範例檔參考: demo/cost_example.py </font>
-<font style='color: darkblue;'>練習檔參考: practice/cost_exercise.py </font>
+**<font style='color: brown;'>範例檔參考: demo/cost_example.py </font>**
+**<font style='color: darkblue;'>練習檔參考: practice/cost_exercise.py </font>**
 
 ---
 
@@ -341,7 +341,7 @@ total_price = f"總價是 {price * quantity} 元" # 直接在 {} 中進行運算
 print(f"在 f-string 中運算: {total_price}")
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/04_type_conversion_precedence.py </font>
+**<font style='color: brown;'>範例檔參考: examples/04_type_conversion_precedence.py </font>**
 
 ---
 
@@ -458,11 +458,11 @@ else:
 
 比較與邏輯運算子與 if 經常搭配使用，常用於組合多個條件來進行複雜的決策，例如：年齡與收入門檻 (age >= 18 and income >= 30000)。
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/05_conditional_statements.py </font>
+**<font style='color: brown;'>範例檔參考: examples/05_conditional_statements.py </font>**
 
 ### 隨堂練習
 
-<font style='color: darkblue;'>練習檔參考: practice/string_slicing_practice.py </font>
+**<font style='color: darkblue;'>練習檔參考: practice/string_slicing_practice.py </font>**
 
 ---
 
@@ -497,8 +497,8 @@ else:
 如果月份不在 1 到 12 的範圍內，印出 "月份輸入錯誤。"
 :::
 
-\*\*`<font style='color: brown;'>`範例檔參考: demo/if_else_example.py </font>
-<font style='color: darkblue;'>練習檔參考: practice/if_exercise.py </font>
+**<font style='color: brown;'>範例檔參考: demo/if_else_example.py </font>**
+**<font style='color: darkblue;'>練習檔參考: practice/if_exercise.py </font>**
 
 ### for 迴圈
 
@@ -686,7 +686,7 @@ for num in numbers:
 
 檔名: `exercise_6_nested_loops.py`
 
-<font style='color: darkblue;'>作業檔參考: homework/</font>
+**<font style='color: darkblue;'>作業檔參考: homework/</font>**
 
 ---
 
@@ -734,7 +734,7 @@ except Exception as e:
 
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/09_error_exception.py </font>
+**<font style='color: brown;'>範例檔參考: examples/09_error_exception.py </font>**
 
 `try`: 嘗試執行一段可能出錯的程式
 
@@ -792,7 +792,7 @@ print(s[:2])   # py
 print(s[::2])  # pto
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: demo/string_example.py </font>
+**<font style='color: brown;'>範例檔參考: demo/string_example.py </font>**
 
 :::warning
 📘 技巧重點：
@@ -812,7 +812,7 @@ print(repeat)    # Hi! Hi! Hi!
 
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: demo/string_example.py </font>
+**<font style='color: brown;'>`範例檔參考: demo/string_example.py </font>**
 
 :::warning
 📘 技巧重點：
@@ -840,7 +840,7 @@ print(repeat)    # Hi! Hi! Hi!
 
 ---
 
-<font style='color: darkblue;'>練習檔參考: practice/string_exercise.py </font>
+**<font style='color: darkblue;'>練習檔參考: practice/string_exercise.py </font>**
 
 :::info
 
@@ -1009,7 +1009,7 @@ print(fruits.index("banana"))
 
 檔名: `exercise_9_string_methods_exercise.py`
 
-<font style='color: darkblue;'>作業檔參考: homework/exercise_9_string_methods_exercise.py </font>
+**<font style='color: darkblue;'>作業檔參考: homework/exercise_9_string_methods_exercise.py </font>**
 :::
 
 ## 6. 元組、字典與集合
@@ -1101,7 +1101,7 @@ print("加料後的食譜：", recipe_list)  # ['蛋', '牛奶', '吐司', '蛋'
 print("不重複食材：", recipe_set)   # {'牛奶', '蛋', '吐司', '起司'}
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/07_lists.py </font>
+**<font style='color: brown;'>範例檔參考: examples/07_lists.py </font>**
 
 :::warning
 範例中我們使用了 list() 將元組轉成清單，才能加料或修改。
@@ -1238,7 +1238,7 @@ nums = [1, 2, 3, 4]
 result = list(map(lambda x: x * 2, nums))  # [2, 4, 6, 8]
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/10_functions.py </font>
+**<font style='color: brown;'>範例檔參考: examples/10_functions.py </font>**
 
 ### 常用函式庫
 
@@ -1346,7 +1346,7 @@ os.system('echo Hello World')  # 執行系統指令（顯示 Hello World）
 
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/11_common_libraries.py </font>
+**<font style='color: brown;'>範例檔參考: examples/11_common_libraries.py </font>**
 
 #### 6. json 模組
 
@@ -1367,8 +1367,8 @@ print(json_string)
 print("-" * 20)
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/11_common_libraries.py </font>
-<font style='color: darkblue;'>練習檔參考: examples/practice_11_common_libraries.py </font>
+**<font style='color: brown;'>範例檔參考: examples/11_common_libraries.py </font>**
+**<font style='color: darkblue;'>練習檔參考: examples/practice_11_common_libraries.py </font>**
 
 ### 隨堂練習
 

@@ -37,8 +37,8 @@ Anaconda 是專為科學計算、資料分析、機器學習設計的 Python 發
 
 ### Anaconda 內建工具一覽
 
-| 工具                         | 功能說明                                        |
-| ---------------------------- | ----------------------------------------------- |
+| 工具                   | 功能說明                                        |
+| ---------------------- | ----------------------------------------------- |
 | **Anaconda Navigator** | GUI 操作介面，可啟動 Jupyter、Spyder 等工具     |
 | **Jupyter Notebook**   | 互動式程式筆記本，適合資料分析與教學使用        |
 | **Spyder**             | Python IDE，類似 MATLAB 的操作介面              |
@@ -56,11 +56,11 @@ Python 中最常見的兩種套件管理工具是：
 
 ### conda vs pip 差異
 
-| 項目         | `conda`            | `pip`                     |
+| 項目         | `conda`              | `pip`                       |
 | ------------ | -------------------- | --------------------------- |
 | 管理對象     | Python + 套件 + 環境 | 只管理 Python 套件          |
 | 支援套件來源 | Conda repository     | PyPI (Python Package Index) |
-| 虛擬環境     | `conda create`     | `venv` 或 `virtualenv`  |
+| 虛擬環境     | `conda create`       | `venv` 或 `virtualenv`      |
 | 相依性解決   | 更強大               | 可能發生衝突                |
 
 ✅ 建議：使用 Anaconda 時，優先用 conda install，若找不到套件再使用 pip install。
@@ -124,11 +124,11 @@ conda env create -f environment.yml
 
 ### 檢查與練習
 
-| 練習項目                    | 說明                                                   |
-| --------------------------- | ------------------------------------------------------ |
+| 練習項目                    | 說明                                               |
+| --------------------------- | -------------------------------------------------- |
 | ✅ 檢查 Python 是否安裝成功 | 終端機輸入 `python --version` 或 `conda --version` |
-| ✅ 練習切換虛擬環境         | VS Code 中選擇正確 conda 環境                          |
-| ✅ 執行 Hello World 程式    | 建立一個 `main.py` 並印出 "Hello, Python!"           |
+| ✅ 練習切換虛擬環境         | VS Code 中選擇正確 conda 環境                      |
+| ✅ 執行 Hello World 程式    | 建立一個 `main.py` 並印出 "Hello, Python!"         |
 | ✅ 練習安裝套件             | 使用 `conda install` 或 `pip install` 安裝指定套件 |
 
 ---
@@ -155,23 +155,23 @@ conda env create -f environment.yml
 
 ✅ 好的命名
 
-| 命名風格                                       | 用途說明                                               | 範例                                                |
-| ---------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------- |
+| 命名風格                               | 用途說明                                               | 範例                                          |
+| -------------------------------------- | ------------------------------------------------------ | --------------------------------------------- |
 | **`snake_case`**                       | 適用於函式名稱、方法名稱、變數名稱、模組名稱和套件名稱 | `my_function`、`calculate_total`、`user_name` |
 | **`CamelCase`**                        | 適用於類別名稱（首字母大寫）                           | `MyClass`、`UserAccount`、`HttpRequest`       |
-| **`SNAKE_CASE`**                       | 用於模組或套件中的**常數名稱**                   | `MAX_CONNECTIONS`、`DEFAULT_PORT`               |
-| **`_single_leading_underscore`**       | 表示內部使用（private），不建議外部呼叫                | `_internal_helper`                                |
-| **`__double_leading_underscore`**      | 內部變數名稱混淆，避免與子類別衝突（名稱改寫）         | `__mangled_variable`                              |
+| **`SNAKE_CASE`**                       | 用於模組或套件中的**常數名稱**                         | `MAX_CONNECTIONS`、`DEFAULT_PORT`             |
+| **`_single_leading_underscore`**       | 表示內部使用（private），不建議外部呼叫                | `_internal_helper`                            |
+| **`__double_leading_underscore`**      | 內部變數名稱混淆，避免與子類別衝突（名稱改寫）         | `__mangled_variable`                          |
 | **`__double_underscore__`** （dunder） | 內建特殊方法與屬性                                     | `__init__`、`__str__`、`__len__`              |
 
-**`<font style='color: brown;'>`範例檔參考: examples/01_variables_naming.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/01_variables_naming.py</span>**
 
 ### 基本資料型別
 
 Python 中的基本資料型別常見有：
 
-| 型別      | 說明           | 範例                   |
-| --------- | -------------- | ---------------------- |
+| 型別    | 說明           | 範例               |
+| ------- | -------------- | ------------------ |
 | `int`   | 整數           | `10`、`-5`         |
 | `float` | 浮點數（小數） | `3.14`、`-0.5`     |
 | `str`   | 字串           | `'Hello'`、`"123"` |
@@ -191,7 +191,7 @@ is_student = True # bool
 - 字串必須用 ' 或 " 包起來。
 - 布林值是 True 和 False（首字母需大寫)
 
-**`<font style='color: brown;'>`範例檔參考: examples/02_data_types.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/02_data_types.py</span>**
 
 ### 數值運算處理
 
@@ -201,15 +201,15 @@ is_student = True # bool
 
 #### 算術運算子一覽表
 
-|     運算子     |        名稱        |    範例    | 說明                             | 結果 |
-| :------------: | :----------------: | :--------: | :------------------------------- | :--: |
-|  **+**  |        加法        | `5 + 3` | 將運算元相加                     |  8  |
-|  **-**  |        減法        | `5 - 3` | 將左邊減去右邊                   |  2  |
-|  **\***  |        乘法        | `5 * 3` | 將運算元相乘                     |  15  |
-|  **/**  |        除法        | `5 / 2` | 標準除法，結果為**浮點數** | 2.5 |
-|  **//**  | **地板除法** | `5 // 2` | 除法後，**向下取整**       |  2  |
-|  **%**  |  **取餘數**  | `5 % 2` | 傳回除法的餘數                   |  1  |
-| **\*\*** |   **次方**   | `5 ** 2` | 左邊運算元的右邊運算元次方       |  25  |
+|  運算子  |     名稱     |   範例   | 說明                       | 結果 |
+| :------: | :----------: | :------: | :------------------------- | :--: |
+|  **+**   |     加法     | `5 + 3`  | 將運算元相加               |  8   |
+|  **-**   |     減法     | `5 - 3`  | 將左邊減去右邊             |  2   |
+|  **\***  |     乘法     | `5 * 3`  | 將運算元相乘               |  15  |
+|  **/**   |     除法     | `5 / 2`  | 標準除法，結果為**浮點數** | 2.5  |
+|  **//**  | **地板除法** | `5 // 2` | 除法後，**向下取整**       |  2   |
+|  **%**   |  **取餘數**  | `5 % 2`  | 傳回除法的餘數             |  1   |
+| **\*\*** |   **次方**   | `5 ** 2` | 左邊運算元的右邊運算元次方 |  25  |
 
 ```python=
 a = 15
@@ -249,11 +249,11 @@ print(f"6. 取餘數 (a % b): {a % b}")
 print(f"7. 次方 (b ** 3): {b ** 3}")
 ```
 
-**`<font style='color: brown;'>`範例檔參考: examples/03_operations.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/03_operations.py</span>**
 
 ### 隨堂練習
 
-`<font style='color: darkblue;'>`開啟 cost_exercise.py，完成下列練習題 `</font>`
+<span style="color: darkblue;">開啟 cost_exercise.py，完成下列練習題</span>
 :::info
 
 #### 1. 計算與型別：
@@ -271,8 +271,8 @@ print(f"7. 次方 (b ** 3): {b ** 3}")
 
 :::
 
-**`<font style='color: brown;'>`範例檔參考: demo/cost_example.py `</font>`**
-**`<font style='color: darkblue;'>`練習檔參考: practice/cost_exercise.py `</font>`**
+**<span style="color: brown;">範例檔參考: demo/cost_example.py</span>**
+**<span style="color: darkblue;">練習檔參考: practice/cost_exercise.py</span>**
 
 ---
 
@@ -341,7 +341,7 @@ total_price = f"總價是 {price * quantity} 元" # 直接在 {} 中進行運算
 print(f"在 f-string 中運算: {total_price}")
 ```
 
-**`<font style='color: brown;'>`範例檔參考: examples/04_type_conversion_precedence.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/04_type_conversion_precedence.py</span>**
 
 ---
 
@@ -363,11 +363,11 @@ score3 = 78
 
 資料容器就像不同類型的「資料盒子」，每種盒子有不同的特性和用途。
 
-| 類型                    | 說明                  | 範例                                                        | 特性                     |
-| :---------------------- | :-------------------- | :---------------------------------------------------------- | :----------------------- |
-| **List（串列）**  | 有順序、可修改        | `["apple", "banana", "cherry"]`                           | 可新增、刪除、改值       |
-| **Tuple（元組）** | 有順序、不可修改      | `("red", "green", "blue")`                                | 用於保護資料不被意外修改 |
-| **Dict（字典）**  | 鍵值配對（key:value） | `{"name": "Tom", "age": 18}`                              | 可快速查找資料           |
+| 類型              | 說明                  | 範例                                                   | 特性                     |
+| :---------------- | :-------------------- | :----------------------------------------------------- | :----------------------- |
+| **List（串列）**  | 有順序、可修改        | `["apple", "banana", "cherry"]`                        | 可新增、刪除、改值       |
+| **Tuple（元組）** | 有順序、不可修改      | `("red", "green", "blue")`                             | 用於保護資料不被意外修改 |
+| **Dict（字典）**  | 鍵值配對（key:value） | `{"name": "Tom", "age": 18}`                           | 可快速查找資料           |
 | **Set（集合）**   | 無順序、不重複        | `{"apple", "banana", "apple"}` → `{"apple", "banana"}` | 自動去除重複值           |
 
 ### 📦 容器的概念表
@@ -376,10 +376,10 @@ score3 = 78
 
 | Python 容器 | 比喻                                         |
 | :---------- | :------------------------------------------- |
-| `list`    | 一排有編號的儲物櫃，可以隨時換物品           |
-| `tuple`   | 一排被封死的透明信箱，只能看不能動           |
-| `dict`    | 貼著不同標籤的抽屜（如「帳單」、「情書」等） |
-| `set`     | 把重複的信件自動丟掉的篩選器                 |
+| `list`      | 一排有編號的儲物櫃，可以隨時換物品           |
+| `tuple`     | 一排被封死的透明信箱，只能看不能動           |
+| `dict`      | 貼著不同標籤的抽屜（如「帳單」、「情書」等） |
+| `set`       | 把重複的信件自動丟掉的篩選器                 |
 
 ---
 
@@ -431,15 +431,15 @@ else:
 
 這些運算子常用於條件判斷式，回傳結果通常是布林值（`True` 或 `False`）。
 
-|      類型      |     運算子     | 說明                                                                    |
-| :------------: | :-------------: | :---------------------------------------------------------------------- |
-| **比較** |     `==`     | 等於                                                                    |
-|                |     `!=`     | 不等於                                                                  |
-|                |  `>` / `<`  | 大於 / 小於                                                             |
-|                | `>=` / `<=` | 大於等於 / 小於等於                                                     |
-| **邏輯** |     `and`     | 邏輯「與」：兩邊都 `True`，結果才是 `True`                          |
-|                |     `or`     | 邏輯「或」：任一邊 `True`，結果即為 `True`                          |
-|                |     `not`     | 邏輯「非」：將布林值反轉 (`True` 變 `False`，`False` 變 `True`) |
+|   類型   |   運算子    | 說明                                                            |
+| :------: | :---------: | :-------------------------------------------------------------- |
+| **比較** |    `==`     | 等於                                                            |
+|          |    `!=`     | 不等於                                                          |
+|          |  `>` / `<`  | 大於 / 小於                                                     |
+|          | `>=` / `<=` | 大於等於 / 小於等於                                             |
+| **邏輯** |    `and`    | 邏輯「與」：兩邊都 `True`，結果才是 `True`                      |
+|          |    `or`     | 邏輯「或」：任一邊 `True`，結果即為 `True`                      |
+|          |    `not`    | 邏輯「非」：將布林值反轉 (`True` 變 `False`，`False` 變 `True`) |
 
 #### 範例程式
 
@@ -458,11 +458,11 @@ else:
 
 比較與邏輯運算子與 if 經常搭配使用，常用於組合多個條件來進行複雜的決策，例如：年齡與收入門檻 (age >= 18 and income >= 30000)。
 
-**`<font style='color: brown;'>`範例檔參考: examples/05_conditional_statements.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/05_conditional_statements.py</span>**
 
 ### 隨堂練習
 
-**`<font style='color: darkblue;'>`練習檔參考: practice/string_slicing_practice.py `</font>`**
+**<span style="color: darkblue;">練習檔參考: practice/string_slicing_practice.py</span>**
 
 ---
 
@@ -497,8 +497,8 @@ else:
 如果月份不在 1 到 12 的範圍內，印出 "月份輸入錯誤。"
 :::
 
-**`<font style='color: brown;'>`範例檔參考: demo/if_else_example.py `</font>`**
-**`<font style='color: darkblue;'>`練習檔參考: practice/if_exercise.py `</font>`**
+**<span style="color: brown;">範例檔參考: demo/if_else_example.py</span>**
+**<span style="color: darkblue;">練習檔參考: practice/if_exercise.py</span>**
 
 ### for 迴圈
 
@@ -643,10 +643,10 @@ for num in numbers:
     print(f"    奇數是: {num}")
 ```
 
-**`<font style='color: brown;'>`範例檔參考: examples/06_for_loops.py `</font>`
-**`<font style='color: brown;'>`範例檔參考: examples/08_while_loops.py `</font>`
-`<font style='color: darkblue;'>`練習檔參考: practice/for_loop_exercise.py `</font>`
-`<font style='color: darkblue;'>`練習檔參考: practice/while_loop_exercise.py `</font>`
+**<span style="color: brown;">範例檔參考: examples/06_for_loops.py</span>**
+**<span style="color: brown;">範例檔參考: examples/08_while_loops.py</span>**
+<span style="color: darkblue;">練習檔參考: practice/for_loop_exercise.py</span>
+<span style="color: darkblue;">練習檔參考: practice/while_loop_exercise.py</span>
 
 #### 應用情境
 
@@ -660,7 +660,7 @@ for num in numbers:
 
 ### 回家小作業 1
 
-`<font style="color: darkblue;">`在 homework 資料夾中, 完成下列練習題`</font>`
+<span style="color: darkblue;">在 homework 資料夾中, 完成下列練習題</span>
 
 #### 練習題 1：決定分數等級
 
@@ -686,7 +686,7 @@ for num in numbers:
 
 檔名: `exercise_6_nested_loops.py`
 
-**`<font style='color: darkblue;'>`作業檔參考: homework/`</font>`**
+**<span style="color: darkblue;">作業檔參考: homework/</span>**
 
 ---
 
@@ -701,8 +701,8 @@ for num in numbers:
 
 ### 常見錯誤訊息解析
 
-| 錯誤訊息類型      | 說明與出現時機               | 範例                         |
-| ----------------- | ---------------------------- | ---------------------------- |
+| 錯誤訊息類型      | 說明與出現時機               | 範例                       |
+| ----------------- | ---------------------------- | -------------------------- |
 | SyntaxError       | 語法錯誤；打錯、漏括號等     | `print('Hi'` (漏括號)      |
 | NameError         | 變數未定義或拼錯名稱         | `print(a)` (a 未宣告過)    |
 | TypeError         | 型態錯誤，如將字串與數字相加 | `3 + 'Hello'`              |
@@ -711,7 +711,7 @@ for num in numbers:
 | KeyError          | 字典(key-value)查無鍵        | `d = {}; print(d['key'])`  |
 | ZeroDivisionError | 被除數為零                   | `10/0`                     |
 | AttributeError    | 呼叫不存在的屬性或方法       | `'abc'.push()`             |
-| IndentationError  | 縮排錯誤                     | if 語句後未縮排              |
+| IndentationError  | 縮排錯誤                     | if 語句後未縮排            |
 | FileNotFoundError | 檔案不存在                   | `open('none.txt')`         |
 
 ---
@@ -734,7 +734,7 @@ except Exception as e:
 
 ```
 
-**`<font style='color: brown;'>`範例檔參考: examples/09_error_exception.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/09_error_exception.py</span>**
 
 `try`: 嘗試執行一段可能出錯的程式
 
@@ -792,7 +792,7 @@ print(s[:2])   # py
 print(s[::2])  # pto
 ```
 
-**`<font style='color: brown;'>`範例檔參考: demo/string_example.py `</font>`**
+**<span style="color: brown;">範例檔參考: demo/string_example.py</span>**
 
 :::warning
 📘 技巧重點：
@@ -812,7 +812,7 @@ print(repeat)    # Hi! Hi! Hi!
 
 ```
 
-**`<font style='color: brown;'>`範例檔參考: demo/string_example.py `</font>`**
+**<span style="color: brown;">範例檔參考: demo/string_example.py</span>**
 
 :::warning
 📘 技巧重點：
@@ -822,7 +822,7 @@ print(repeat)    # Hi! Hi! Hi!
 
 #### 隨堂練習
 
-`<font style="color: darkblue;">`在practice/string_slicing_practice.py, 完成下列練習題`</font>`
+<span style="color: darkblue;">在 practice/string_slicing_practice.py, 完成下列練習題</span>
 
 ---
 
@@ -830,8 +830,8 @@ print(repeat)    # Hi! Hi! Hi!
 
 #### 字串常用技巧
 
-| 技巧       | 範例                                      |
-| ---------- | ----------------------------------------- |
+| 技巧       | 範例                                 |
+| ---------- | ------------------------------------ |
 | 字串合併   | `"Hello" + "World"` → `'HelloWorld'` |
 | 重複       | `"Hi" * 3` → `'HiHiHi'`              |
 | 取長度     | `len("Hello")` → `5`                 |
@@ -840,7 +840,7 @@ print(repeat)    # Hi! Hi! Hi!
 
 ---
 
-**`<font style='color: darkblue;'>`練習檔參考: practice/string_exercise.py `</font>`**
+**<span style="color: darkblue;">練習檔參考: practice/string_exercise.py</span>**
 
 :::info
 
@@ -874,7 +874,7 @@ sentence = "Python is a versatile and powerful programming language."
 
 #### 4. 使用 print() 印出完整的姓名，格式為 "Hello, [名字] [姓氏]!"。
 
-\*\*`<font style='color: brown;'>`範例檔參考: demo/string_example.py `</font>`
+**<span style="color: brown;">範例檔參考: demo/string_example.py</span>**
 :::
 
 ---
@@ -1007,7 +1007,7 @@ print(fruits.index("banana"))
 
 #### 練習題 9：字串方法練習
 
-**`<font style='color: darkblue;'>`開啟以下檔案練習: homework/exercise_9_string_methods_exercise.py `</font>`**
+**<span style="color: darkblue;">開啟以下檔案練習: homework/exercise_9_string_methods_exercise.py</span>**
 :::
 
 ## 6. 元組、字典與集合
@@ -1066,7 +1066,7 @@ print(banA - banB) # 差集（只在A班沒有在B班的同學）
 
 - 集合在需要去重、統計時很方便。
 - 非常適合問卷資料、重複計算排除、成員比對。
-- 
+-
 
 ### 資料結構選擇與轉換
 
@@ -1099,7 +1099,7 @@ print("加料後的食譜：", recipe_list)  # ['蛋', '牛奶', '吐司', '蛋'
 print("不重複食材：", recipe_set)   # {'牛奶', '蛋', '吐司', '起司'}
 ```
 
-**`<font style='color: brown;'>`範例檔參考: examples/07_lists.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/07_lists.py</span>**
 
 :::warning
 範例中我們使用了 list() 將元組轉成清單，才能加料或修改。
@@ -1162,7 +1162,7 @@ def add(x, y):
 result = add(3, 7)  # result 得到 10
 ```
 
-\*\*`<font style='color: brown;'>`範例檔參考: examples/10_functions.py `</font>`
+**<span style="color: brown;">範例檔參考: examples/10_functions.py</span>**
 
 #### 4. 什麼是變數作用域
 
@@ -1236,7 +1236,7 @@ nums = [1, 2, 3, 4]
 result = list(map(lambda x: x * 2, nums))  # [2, 4, 6, 8]
 ```
 
-**`<font style='color: brown;'>`範例檔參考: examples/10_functions.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/10_functions.py</span>**
 
 ### 常用函式庫
 
@@ -1344,7 +1344,7 @@ os.system('echo Hello World')  # 執行系統指令（顯示 Hello World）
 
 ```
 
-**`<font style='color: brown;'>`範例檔參考: examples/11_common_libraries.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/11_common_libraries.py</span>**
 
 #### 6. json 模組
 
@@ -1365,8 +1365,8 @@ print(json_string)
 print("-" * 20)
 ```
 
-**`<font style='color: brown;'>`範例檔參考: examples/11_common_libraries.py `</font>`**
-**`<font style='color: darkblue;'>`練習檔參考: examples/practice_11_common_libraries.py `</font>`**
+**<span style="color: brown;">範例檔參考: examples/11_common_libraries.py</span>**
+**<span style="color: darkblue;">練習檔參考: examples/practice_11_common_libraries.py</span>**
 
 ### 隨堂練習
 
@@ -1376,18 +1376,18 @@ print("-" * 20)
 請設計一個「幸運數字日誌」程式，讓使用者每天可以記錄自己的幸運數字，並將結果顯示在畫面上。
 **要求**：
 
-* 使用 input() 讓使用者輸入「姓名」。
-* 使用 random.randint(1, 99) 自動產生一個 1 到 99 之間的幸運數字。
-* 設計至少一個自訂函式（例如 format_lucky_message(name, number)），負責組合並回傳要顯示的訊息字串。
-* 在主程式中呼叫該函式，印出完整的幸運數字訊息，例如：
-* `2025-12-30，今天 Alex 的幸運數字是 7！祝你有美好的一天！`
+- 使用 input() 讓使用者輸入「姓名」。
+- 使用 random.randint(1, 99) 自動產生一個 1 到 99 之間的幸運數字。
+- 設計至少一個自訂函式（例如 format_lucky_message(name, number)），負責組合並回傳要顯示的訊息字串。
+- 在主程式中呼叫該函式，印出完整的幸運數字訊息，例如：
+- `2025-12-30，今天 Alex 的幸運數字是 7！祝你有美好的一天！`
 
 **程式撰寫建議**：
 
-* 可以額外使用 datetime 模組，在訊息中加入今天的日期。
-* 可將輸入處理、訊息格式化、畫面輸出拆成不同函式，練習用函式來組織程式碼。
+- 可以額外使用 datetime 模組，在訊息中加入今天的日期。
+- 可將輸入處理、訊息格式化、畫面輸出拆成不同函式，練習用函式來組織程式碼。
 
-**`<font style='color: darkblue;'>`開啟以下檔案練習: homework/exercise10_lucky_number_logger.py `</font>`**
+**<span style="color: darkblue;">開啟以下檔案練習: homework/exercise10_lucky_number_logger.py</span>**
 
 ---
 
